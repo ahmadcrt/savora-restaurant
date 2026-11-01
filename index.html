@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Savora Restaurant — Good Food. Beautiful Moments. (Fictional Portfolio Demo)</title>
+<meta name="description" content="Savora is a fictional premium restaurant created as a web development portfolio demonstration.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<p class="demo-bar">Savora is a fictional restaurant — a portfolio demonstration. No real bookings or orders.</p>
+<header class="nav" id="top">
+  <a class="brand" href="#home" aria-label="Savora Restaurant home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 20c0-5 4-4 6-8 2 4 6 3 6 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Savora</a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+  <nav id="links" class="links" aria-label="Main">
+    <a href="#home">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reservations">Reservations</a><a href="#contact">Contact</a>
+    <a class="btn btn-solid" href="#reservations">Book a Table</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Good Food.<br>Beautiful Moments.</h1>
+    <p>Seasonal cooking, a candlelit room and a table that stays yours for the evening. Welcome to Savora.</p>
+    <div class="actions"><a class="btn btn-solid" href="#menu">Explore Our Menu</a><a class="btn btn-line" href="#reservations">Reserve a Table</a></div>
+  </div>
+  <div class="hero-img"><img data-src="1414235077428-338989a2e8c0" data-w="1200" alt="A set dining table with plated dishes and wine at Savora" fetchpriority="high"></div>
+</section>
+
+<section class="section split" id="story">
+  <div class="story-imgs"><img data-src="1517248135467-4c7edcad34c4" data-w="800" alt="Savora dining room interior" loading="lazy"><img class="small" data-src="1556910103-1c02745aae4d" data-w="500" alt="Chef plating a dish" loading="lazy"></div>
+  <div class="prose">
+    <h2>Our Story</h2>
+    <p>Savora began with a simple belief: a meal is the best excuse to slow down. Our kitchen cooks from a short, seasonal list, with fire, butter and patience doing most of the work.</p>
+    <p>The room is warm and unhurried — low light, linen, burgundy leather — built for long conversations and second helpings of dessert.</p>
+    <a class="btn btn-solid" href="#chef">Read Our Story</a>
+  </div>
+</section>
+
+<section class="section tint" id="menu">
+  <div class="head"><h2>Signature Menu</h2><p>Prices are fictional.</p></div>
+  <div class="filters" role="tablist" aria-label="Menu categories"></div>
+  <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+</section>
+
+<section class="section" id="chef">
+  <div class="head"><h2>Chef's Special</h2><p>Three dishes the kitchen is proudest of.</p></div>
+  <div class="chef-grid" id="chefGrid"></div>
+</section>
+
+<section class="section tint" id="gallery">
+  <div class="head"><h2>Gallery</h2><p>Tap any photo to enlarge.</p></div>
+  <div class="gallery" id="galleryGrid"></div>
+</section>
+
+<section class="section split res" id="reservations">
+  <div class="prose">
+    <h2>Reserve a Table</h2>
+    <p>Tell us when you'd like to dine and we'll show you how a confirmation looks.</p>
+    <p class="notice"><strong>Demo only:</strong> this form runs in your browser. It does not create a real booking and nothing is sent anywhere.</p>
+  </div>
+  <form id="resForm" novalidate>
+    <label>Full name<input name="name" required autocomplete="name"><small></small></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"><small></small></label>
+    <label>Phone number<input name="phone" type="tel" required autocomplete="tel"><small></small></label>
+    <div class="row"><label>Date<input name="date" type="date" required><small></small></label>
+    <label>Time<select name="time" required><option value="">Select</option><option>17:30</option><option>18:30</option><option>19:30</option><option>20:30</option><option>21:30</option></select><small></small></label></div>
+    <label>Guests<select name="guests" required><option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select><small></small></label>
+    <label>Special requests<textarea name="notes" rows="3"></textarea></label>
+    <button class="btn btn-solid" type="submit">Request Demo Reservation</button>
+    <div id="resOk" class="ok" role="status" tabindex="-1" hidden></div>
+  </form>
+</section>
+
+<section class="section tint">
+  <div class="head"><h2>Kind Words</h2><p>Sample testimonials — fictional, written for this demo. Not real customer reviews.</p></div>
+  <div class="quotes">
+    <blockquote><p>The braised short rib alone is worth the trip. We stayed three hours and didn't notice.</p><cite>Sample Guest A (fictional)</cite></blockquote>
+    <blockquote><p>Warm service, a beautiful room, and a dessert I'm still thinking about.</p><cite>Sample Guest B (fictional)</cite></blockquote>
+    <blockquote><p>Our anniversary dinner felt effortless. Every course arrived exactly when we wanted it.</p><cite>Sample Guest C (fictional)</cite></blockquote>
+  </div>
+</section>
+
+<section class="section split" id="contact">
+  <div class="prose">
+    <h2>Visit Savora</h2>
+    <p><strong>Address (fictional):</strong><br>12 Example Lane, Sampletown, 00000</p>
+    <p><strong>Phone (demo):</strong> +00 000 000 0000<br><strong>Email (demo):</strong> hello@savora.example</p>
+    <p><strong>Hours:</strong><br>Tue–Thu 17:00–22:00<br>Fri–Sat 17:00–23:30<br>Sun 12:00–21:00 · Mon closed</p>
+    <a class="btn btn-solid" href="https://wa.me/0000000000" target="_blank" rel="noopener">WhatsApp (placeholder number)</a>
+  </div>
+  <div class="prose"><h3>Follow along</h3><p>Demo links — they lead to the platforms' home pages.</p>
+    <div class="social"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">FB</a><a href="https://x.com/" target="_blank" rel="noopener" aria-label="X">X</a></div></div>
+</section>
+</main>
+
+<footer class="footer">
+  <div><a class="brand" href="#top">Savora</a><p>Fictional portfolio project.</p></div>
+  <nav aria-label="Footer"><a href="#home">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reservations">Reservations</a><a href="#contact">Contact</a></nav>
+  <div><p>Tue–Sat 17:00–late<br>Sun 12:00–21:00</p><p class="social"><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">FB</a></p></div>
+  <p class="copy">© 2026 Savora Restaurant (fictional). Photos via Unsplash. Designed &amp; Developed by <a href="https://github.com/ahmadcrt" target="_blank" rel="noopener">Ahmad</a></p>
+</footer>
+
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lb-close" aria-label="Close">×</button><button class="lb-nav prev" aria-label="Previous">‹</button>
+  <img alt=""><button class="lb-nav next" aria-label="Next">›</button>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
